@@ -1,0 +1,13 @@
+name: designate-dashboard
+summary: Adds the designate dashboard to openstack horizon
+maintainer:  Martin Hellstrom <martin.hellstrom@dgc.se>
+description: |
+    Provides a dashboard plugin to the openstack dashboard. This
+    dashboard, "Designate", provides access to Designate from the horizon
+    interface.
+tags: ["openstack"]
+subordinate: true
+requires:
+  dashboard-plugin:
+    interface: dashboard-plugin
+    scope: container
