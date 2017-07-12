@@ -14,6 +14,7 @@ def install_packages(rel=None):
     apt.install_queued()
     reactive.set_state('python-designate-dashboard.installed')
     rel.set_remote('plugin-ready')
+    hookenv.status_set('active', 'Plugin Installed')
 
 @reactive.when_not('dashboard-plugin.available')
 @reactive.when('python-designate-dashboard.installed')
