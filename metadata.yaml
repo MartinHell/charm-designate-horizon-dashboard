@@ -7,6 +7,8 @@ description: |
     interface.
 tags: ["openstack"]
 subordinate: true
+series:
+  - xenial
 requires:
   dashboard-plugin:
     interface: dashboard-plugin
