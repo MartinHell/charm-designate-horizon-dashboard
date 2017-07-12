@@ -13,7 +13,7 @@ def install_packages(rel=None):
     apt.queue_install(['python-designate-dashboard'])
     apt.install_queued()
     reactive.set_state('python-designate-dashboard.installed')
-    reactive.set_remote('plugin-ready')
+    rel.set_remote('plugin-ready')
 
 @reactive.when_not('dashboard-plugin.available')
 @reactive.when('python-designate-dashboard.installed')
