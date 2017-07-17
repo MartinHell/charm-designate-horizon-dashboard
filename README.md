@@ -1,4 +1,6 @@
+## Using charmbox to build the charm
 
+```
 cd git/juju/local && mkdir -p {data,charms,interfaces,layers}
 export JUJU_BASE=/home/emil/git/juju/local
 export JUJU_DATA=$JUJU_BASE/data
@@ -10,5 +12,6 @@ alias dock_juju="sudo docker run --rm --name juju_dev -t -i -v $JUJU_DATA:/home/
 
 
 dock_juju
-cd charms/MY_CHARM 
+cd charms/MY_CHARM
 charm build
+```
