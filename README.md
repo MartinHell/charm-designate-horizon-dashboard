@@ -2,7 +2,7 @@
 
 ```
 cd git/juju/local && mkdir -p {data,charms,interfaces,layers}
-export JUJU_BASE=/home/emil/git/juju/local
+export JUJU_BASE=$HOME/git/juju/local
 export JUJU_DATA=$JUJU_BASE/data
 export JUJU_REPOSITORY=$JUJU_BASE/charms
 export INTERFACE_PATH=$JUJU_BASE/interfaces
